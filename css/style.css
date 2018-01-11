@@ -22,7 +22,7 @@ header ul li a{
 }
 
 .logo{
-	background-image: ;
+	background: url(img/simplon.co.png);
 }
 
 h1{
@@ -40,4 +40,7 @@ footer{
 
 .design{
 	float: right;
+}
+section{
+
 }

@@ -22,6 +22,7 @@ var names = [[nom, present, photo]];
 // #######  functions  ################## 
 
 // localStorage only supports strings. Use JSON.stringify() and JSON.parse().
+
 function saveNames(){
 names[0] = prompt("New member name?");
 localStorage.setItem("names", JSON.stringify(names));

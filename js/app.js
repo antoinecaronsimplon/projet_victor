@@ -26,7 +26,10 @@ var storedNames = [["", true, ""]];
 
 function getGroupes(){
 	// recup groupes set in page
-	noGroupes=$('#groupe option:selected').val()
+	noGroupes=$('#groupe option:selected').val();
+	if (noGroupes<2){
+		noGroupes=2;
+	}
 }
 
  		
@@ -65,7 +68,7 @@ function saveNames(){
 getNames();  // always start with getnames; fill variable names.
 
 
-$( window ).unload(function() {
+$( window ).unload(function() { // when exit the page, save member names
   saveNames();
 });
 

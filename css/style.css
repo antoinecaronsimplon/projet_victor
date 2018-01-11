@@ -4,7 +4,40 @@ body{
 	padding: 0;
 }
 
+header{
+	background-color: ;
+	color: ;
+}
+
+header ul{
+
+}
+
+header ul li{
+	list-style: none;
+}
+
+header ul li a{
+	text-transform: none;
+}
+
+.logo{
+	background-image: ;
+}
+
 h1{
 	text-align: center;
 	text-transform: uppercase;
+}
+
+footer{
+	display: inline;
+}
+
+.copy{
+	float: left
+}
+
+.design{
+	float: right;
 }

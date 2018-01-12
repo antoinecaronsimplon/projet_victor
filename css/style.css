@@ -31,14 +31,6 @@ header{
 	margin-right: 1em;
 }
 
-header ul{
- 
-	/*margin-left: 1em;
-	margin-right: 1em;*/
-	/*border: solid 1px;*/
-	/*background-color: ;*/
-	position: absolute; top: 1em; left: 0em; right: 0em;
-}
 
 header ul li{
 	list-style: none;

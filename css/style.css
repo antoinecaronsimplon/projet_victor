@@ -1,16 +1,32 @@
-body{
-	font-size: 18px;
+*{
 	margin: 0;
 	padding: 0;
 }
 
+html{
+	height: 100%;
+}
+
+body{
+	font-size: 18px;
+	background-color: grey;
+	min-height: 100%;
+	background-image: url('');
+}
+
 header{
-	background-color: ;
+	display: flex;
+	background-color: grey;
 	color: ;
+	justify-content: space-between;
+	background-image: url('../img/simplon.co.png');
+	background-position: left;
+	background-size: 100px 40px;
+	background-repeat: no-repeat;
 }
 
 header ul{
-
+ 
 }
 
 header ul li{
@@ -21,8 +37,13 @@ header ul li a{
 	text-transform: none;
 }
 
+
 .logo{
 	background: url(img/simplon.co.png);
+}
+
+.settings{
+	float: right;
 }
 
 h1{
@@ -32,15 +53,47 @@ h1{
 
 footer{
 	display: inline;
+	position: absolute; bottom: 1em; left: 1em; right: 1em;
 }
 
 .copy{
-	float: left
+	float: left;
 }
 
 .design{
 	float: right;
 }
-section{
+/*section{
+	margin-top: 300px;
+}*/
 
+.select_gr{
+	position: absolute;
+	margin-left: 45%;
+	top: 50%;
+	
+}
+
+#groupe{
+	width: 30px;
+	transform: translateY(-50%, -50%);
+	height: 25px;
+	background:#fafafa;
+	font:bold 13px Arial;
+	border-radius:20%;
+	color:#555;
+	
+}
+#lancement{	
+	width:85px;
+	height:85px;
+	background-image:url('../img/logo.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*box-shadow:2px 2px 8px #000;*/
+	font:bold 12px Arial;
+	border-radius:50%;
+	color:#555;
+	border: none;
+	
 }

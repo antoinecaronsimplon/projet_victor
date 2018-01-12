@@ -4,7 +4,21 @@
 
 
 	// =======  VANESSA =====================
-
+	/* Générer la liste des apprenants*/
+//*	var presetNames = [];
+	//for( var = i; i< annuaire.length; i++){
+	//	console.log(presetNames[i]);
+	//	$('ul').append('<li>' + presetNames[i]+'</li>');
+	//}
+	//var newStudent = "";
+//
+	//$('#valider').on('click', function(){
+	//	$('#new_student').value(newStudent);
+	//	$(names).append(student, true , [9]);
+	//})
+			
+		
+	
 
 	// =======  RUUD  ========================
 

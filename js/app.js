@@ -1,4 +1,4 @@
-main (){
+(function main(){
 
 // =======  ANTOINE =====================
 
@@ -12,6 +12,7 @@ main (){
 // #######  declaration variables  ###### 
 
 var noGroupe=2;
+var groupePlacesRestant [0]=0
 var nom = "";
 var present = "";
 var photo = "";
@@ -61,6 +62,24 @@ function saveNames(){
 }
 
 
+function numGen(max){
+  		// number Generator from 1 to number given by variable MAX
+  		if (max>1){
+	  		return Math.floor((Math.random() * max) + 1);
+  		} // endif
+  	} // endfunction
+
+
+function sizeGroups(){
+	// recup nogroups
+	// recup nombre membres
+	// calcul le taille
+	// creer les compteurs pour jaque group
+}
+
+function createGroups(){
+
+}
 
 
 // #######  deroulement  ################ 
@@ -73,4 +92,4 @@ $( window ).unload(function() { // when exit the page, save member names
 });
 
 
-}();  // FIN
+})();  // FIN

@@ -23,7 +23,6 @@ header{
 	background-position: left;
 	background-size: 200px 40px;
 	background-repeat: no-repeat;
-	
 	margin-left: 1em;
 	margin-right: 1em;
 }
@@ -42,7 +41,7 @@ header ul li a{
 
 
 .logo{
-	background: url(img/simplon.co.png);
+	background: url("../img/simplon.co.png");
 }
 
 .settings{
@@ -66,18 +65,15 @@ footer{
 .design{
 	float: right;
 }
-/*section{
-	margin-top: 300px;
-}*/
 
 .select_gr{
 	position: absolute;
 	margin-left: 45%;
-	top: 50%;
-	
+	top: 45%;
 }
 
 #groupe{
+	top: 300%;
 	width: 30px;
 	transform: translateY(-50%, -50%);
 	height: 25px;
@@ -85,18 +81,17 @@ footer{
 	font:bold 13px Arial;
 	border-radius:20%;
 	color:#555;
-	
 }
+
 #lancement{	
-	width:85px;
-	height:85px;
+	width:90px;
+	height:90px;
 	background-image:url('../img/logo.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	/*box-shadow:2px 2px 8px #000;*/
-	font:bold 12px Arial;
+	font:bold 11px Arial;
 	border-radius:50%;
 	color:#555;
 	border: none;
-	
 }

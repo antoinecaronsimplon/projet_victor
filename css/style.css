@@ -98,3 +98,20 @@ footer{
 	color:#555;
 	border: none;
 }
+
+
+
+#student_list{
+	margin-top: 30px;
+}
+#student_box{
+	float: left;
+	width: 200px;
+	margin-left: 30px;
+	margin-bottom: 30px;
+	padding: 20px;
+	background-color: rgba(256,256,256,0.3);
+}
+#endFloat{
+	clear: all;
+}

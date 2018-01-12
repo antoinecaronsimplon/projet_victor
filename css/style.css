@@ -21,8 +21,11 @@ header{
 	justify-content: space-between;
 	background-image: url('../img/simplon.co.png');
 	background-position: left;
-	background-size: 100px 40px;
+	background-size: 200px 40px;
 	background-repeat: no-repeat;
+	
+	margin-left: 1em;
+	margin-right: 1em;
 }
 
 header ul{
@@ -37,15 +40,9 @@ header ul li a{
 	text-transform: none;
 }
 
-/*.logo{
-	float: left;
-	
-	width: 50px;
-	height: 20px;
-}*/
 
-.titre {
-	/*float: center;*/
+.logo{
+	background: url(img/simplon.co.png);
 }
 
 .settings{
@@ -68,4 +65,38 @@ footer{
 
 .design{
 	float: right;
+}
+/*section{
+	margin-top: 300px;
+}*/
+
+.select_gr{
+	position: absolute;
+	margin-left: 45%;
+	top: 50%;
+	
+}
+
+#groupe{
+	width: 30px;
+	transform: translateY(-50%, -50%);
+	height: 25px;
+	background:#fafafa;
+	font:bold 13px Arial;
+	border-radius:20%;
+	color:#555;
+	
+}
+#lancement{	
+	width:85px;
+	height:85px;
+	background-image:url('../img/logo.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*box-shadow:2px 2px 8px #000;*/
+	font:bold 12px Arial;
+	border-radius:50%;
+	color:#555;
+	border: none;
+	
 }

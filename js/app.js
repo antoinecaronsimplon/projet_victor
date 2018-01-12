@@ -17,7 +17,7 @@
 	var storedNames = [["", true, ""]];
 	var iStudents=0;
 	var iGroups=0;  
-	var iGroupMembers=[[""],[0]];  // contains membername / assigned group
+	var iGroupMembers=[["",0]];  // contains membername / assigned group
 
 
 	// #############################################
@@ -42,12 +42,13 @@
 		
 		storedNames = JSON.parse(localStorage.getItem("names"));
 		
-		console.log("storedNames.length : "+storedNames.length);
+		console.log("presetNames "+presetNames);
+		console.log("storedNames "+storedNames);
 		
 		// reset names to zero
 		names.length = 0;
 
-		if (storedNames.length<1){
+		if (storedNames==null){
 			names = presetNames;
 		} else {
 			names = storedNames;
@@ -75,30 +76,32 @@
 
 
 	function getGroupMembers(){
-		// reset iMembersPerGroup to zero
-		// contains groupnumber / available places
-		iGroupMembers.length = 0;
-
 		// recup n° groups set in page - store in iGroups variable
 		iGroups=$('#groupe option:selected').val();
 		if (iGroups<2){
 			iGroups=2;
 		}
 		
-		// recup number of students from names - store in iStudents variable
-		iStudents= names.length;
+		iStudents= names.length;  // recup number of students from names - store in iStudents variable
 
 		mixTableau(names);
 
-		var j=iGroups;
-		for (var i = names.length - 1; i >= 0; i--) {
-			iGroupMembers[i][0]=inames[i];
-			iGroupMembers[i][1]=j;
+		iGroupMembers.length = 0;	// reset iMembersPerGroup to zero
+		iGroupMembers=names;	// contains groupnumber / available places
+
+		var j = iGroups;
+
+		for (var i = 0; i < iStudents; i++) {
+
+			iGroupMembers[i][3]=j;
+
 			j--;
-			if (j=0){
+			if (j==0){
 				j=iGroups;
-			}	
+			}
 		}
+		console.log("iGroupMembers"+iGroupMembers);
+
 	}
 
 
@@ -135,6 +138,25 @@
 	}
 
 
+	function htmlResult(){
+		// construct i
+		var result=""
+		for (var i = 1; i <= iGroups; i++) {
+			result += "<div id='student_box'>GROUP ";
+			result += i;
+			result += "<br /><hr /><br>";
+			for (var j = 0; j < iGroupMembers.length; j++) {
+				if (iGroupMembers[j][3]==i){
+					result += iGroupMembers[j][0];
+					result += "<br />";
+				}
+				console.log(result);
+			}
+			result += "</div>"
+		}
+		$("#student_list").html(result);
+	}
+
 	// ######################################
 	// #######  deroulement  ################ 
 	// ######################################
@@ -155,9 +177,9 @@
 
 	// onclick bouton lancement --> START 
 	$('#lancement').click(function(){
-		getStudents();		//	set iStudents = count n° students
-		getGroups();		//	set iGroups   = read n° groups
+		console.log("click lancement");
 		getGroupMembers();	//	mix students and place per group
+		htmlResult();
 	});
 
 	// htmlResult(); 	// 	create resultlist
@@ -170,9 +192,9 @@
 
 
 	// END program
-	$( window ).unload(function() {
-	  saveNames();		 // when exit the page, save member names
-	});
+	// $( window ).unload(function() {
+	//   saveNames();		 // when exit the page, save member names
+	// });
 
 
 
@@ -204,8 +226,19 @@
 //         // ..
 //     }
 // }
+//
 // code JQUERY pour verifier etat chkbox
 // Use is() with :checked to get the result as boolean that is true if checkbox is checked.
 // 		ckb = $("#ickb").is(':checked');
 // Or, you can use length, if it is zero then it is not checked.
 // 		ckb = $("#ickb::checked").length
+//
+//
+// function getFileName(){
+//     var pagePathName= window.location.pathname;
+//     return pagePathName.substring(pagePathName.lastIndexOf("/") + 1);
+// }
+// var iPage=getFileName();
+// if (iPage="settings.html"){
+// 		// do your thing
+// 	}

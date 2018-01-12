@@ -21,8 +21,11 @@ header{
 	justify-content: space-between;
 	background-image: url('../img/simplon.co.png');
 	background-position: left;
-	background-size: 100px 40px;
+	background-size: 200px 40px;
 	background-repeat: no-repeat;
+	
+	margin-left: 1em;
+	margin-right: 1em;
 }
 
 header ul{

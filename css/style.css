@@ -76,7 +76,7 @@ footer{
 
 #groupe{
 	top: 300%;
-	width: 30px;
+	width: 50px;
 	transform: translateY(-50%, -50%);
 	height: 25px;
 	background:#fafafa;
@@ -96,5 +96,33 @@ footer{
 	font:bold 12px Arial;
 	border-radius:50%;
 	color:#555;
-	border: none;
+	border: 0;
+	outline: none;
 }
+
+a img {
+	border: 0;
+	outline: none;
+}
+
+a {
+	border: 0;
+	outline: none;
+}
+a:active {
+	outline: none;
+}
+
+img {
+	outline: none;
+	border: 0;
+}
+input::-moz-focus-inner {
+	border: 0;
+}
+
+
+
+
+
+

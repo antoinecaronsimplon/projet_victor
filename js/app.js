@@ -156,11 +156,12 @@
 		// construct i
 		var result=""
 		for (var i = 1; i <= iGroups; i++) {
-			result += "<div id='student_box'>GROUP ";
+			result += "<div id='student_box'>GROUPE ";
 			result += i;
 			result += "<br /><hr /><br>";
 			for (var j = 0; j < iGroupMembers.length; j++) {
 				if (iGroupMembers[j][3]==i){
+					result += '<i class="fa fa-user-circle-o" aria-hidden="true"></i> ';
 					result += iGroupMembers[j][0];
 					result += "<br />";
 				}
@@ -168,6 +169,7 @@
 			}
 			result += "</div>"
 		}
+		result += "<div id='endFloat'></div>"
 		$("#student_list").html(result);
 	}
 

@@ -1,19 +1,18 @@
+/*Antoine début*/
+
 *{
 	margin: 0;
 	padding: 0;
 }
 
 html{
-	/*height: 100%;*/
-	/*width: 100%;*/
+
 }
 
 body{
 	font-size: 18px;
-	background-color: grey;
-	/*min-height: 100%;
-	min-width: 100%;*/
 	background-image: url('../img/fond1.png');
+	background-color: #3b3b3a;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -21,14 +20,12 @@ body{
 header{
 	background:rgba(100,100,100,.3);
 	display: flex;
-	/*background-color: grey;*/
 	justify-content: space-between;
 	background-image: url('../img/simplon.co.png');
 	background-position: left;
 	background-size: 200px 60px;
 	background-repeat: no-repeat;
-	margin-left: 1em;
-	margin-right: 1em;
+	position: absolute; top: 1em; left: 0em; right: 0em;
 }
 
 header ul li{
@@ -37,6 +34,11 @@ header ul li{
 
 header ul li a{
 	text-transform: none;
+
+}
+
+header ul li a i{
+	color: red;
 }
 
 
@@ -56,7 +58,7 @@ h1{
 
 footer{
 	display: inline;
-	position: absolute; bottom: 1em; left: 1em; right: 1em;
+	position: absolute; bottom: 2px; left: 1em; right: 1em;
 }
 
 .copy{
@@ -66,6 +68,8 @@ footer{
 .design{
 	float: right;
 }
+
+/*Antoine fin*/
 
 /*vanessa*/
 .select_gr{

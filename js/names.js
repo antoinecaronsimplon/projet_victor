@@ -5,7 +5,7 @@
 //   type  ======== $tring ========= boolean = $tring = integer =====
 
 
-var presetNames	[
+var presetNames=[
 				[ "Ana JIMENEZ"      , true, "ana.jpg" , 9 ],
 				[ "Antoine CARON"    , true, "ant.jpg" , 9 ],
 				[ "Celine CALMELS"   , true, "cel.jpg" , 9 ],

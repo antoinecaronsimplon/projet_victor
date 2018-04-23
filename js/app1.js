@@ -4,7 +4,7 @@
 
 
 	// =======  VANESSA =====================
-	
+
 
 	// =======  RUUD  ========================
 
@@ -77,9 +77,8 @@
 
 	function getGroupMembers(){
 		// recup n° groups set in page - store in iGroups variable
-		// iGroups=$('#groupe option:selected').val();  // works for optionlist
-		iGroups=$('#groupe').val();  // works for input type number
-				if (iGroups<2){
+		iGroups=$('#groupe option:selected').val();
+		if (iGroups<2){
 			iGroups=2;
 		}
 		

@@ -1,0 +1,28 @@
+debugging 
+
+index.html
+----------
+<select id="groupe">
+	<option>2</option>
+	<option>3</option>
+	<option>4</option>
+	<option>5</option>
+	<option>6</option>
+	<option>7</option>
+</select>
+
+<input id="groupe" type="number" value="2" min="2"/>
+
+app.js
+------
+iGroups=$('#groupe option:selected').val();  // works for optionlist
+iGroups=$('#groupe').val();  // works for input type number
+
+
+members :
+Vanessa CHAILLOU	06 81 16 90 76	vanessa.chaillou@orange.fr
+Antoine CARON	07 67 43 53 85	antoinecaron.simplon@gmail.com	
+Ruud DE KORTE	06 35 91 60 70	dekorte.tsrit@gmail.com
+
+prof :
+Aurélien CHIROT	06 77 13 21 22	achirot@simplon.co
